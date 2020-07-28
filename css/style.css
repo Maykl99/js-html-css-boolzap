@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+.container>.top-child-container{
+    background-color: #009999;
+    height: calc(100vh - 85vh);
+}
+
+.container .child-container{
+    height: calc(100vh - 15vh);
+    background-color: rgb(215, 226, 215);
+}
+
+.container .child-container > .child-app-container{
+    height: 90%;
+    position: fixed;
+    top: calc(100vh - 95%);
+    bottom: calc(100vh - 90%);
+    background-color: #f8f7f7;
+}
+
+.container .child-container > .child-app-container > .child-app-container-item-left,
+.container .child-container > .child-app-container > .child-app-container-item-right{
+    height: 100%;
+    display: inline-block;
+    background-color: teal;
+}
+
+.container .child-container > .child-app-container > .child-app-container-item-right{
+    float: right;
+}
+
+/* struttura esterna centrale lato sinistro */
+.app-item-child-top{
+    height: calc(100% - 90%);
+    background-color: #f3eeea;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.app-item-child-center{
+    height: calc(100% - 90%);
+    background-color: #8edafc;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-item-child-bottom{
+    height: calc(100% - 20%);
+    background-color: #fff;
+}
+
+/* struttura esterna centrale lato destro */
+.app-item-child-top-right{
+    height: calc(100% - 90%);
+    background-color: #f3eeea;
+}
+
+.app-item-child-center-right{
+    height: calc(100% - 20%);
+    background-color: white;
+}
+
+.app-item-child-bottom-right{
+    height: calc(100% - 90%);
+    background-color: #f3eeea;
+}
+
+
+
+/* struttura interna centrale lato sinistro */
+.app-item-child-top img{
+    width: 50px;
+}
+
+.app-item-child-top i{
+    font-size: 25px;
+}
+
+.app-item-child-center i{
+    font-size: 30px;
+    padding-right: 20px;
+}
+
+.barra-ricerca{
+    width: 100%;
+}
+
+.barra-ricerca > input{
+    width: 90%;
+}
+
+.scroll{
+    /* height: calc(100% - 10%); */
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.scroll-icon{
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    background-color: yellow;
+}
