@@ -50,7 +50,7 @@ body{
 .app-item-child-center{
     height: calc(100% - 90%);
     background-color: #8edafc;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -117,4 +117,42 @@ body{
 
 .scroll-icon img{
     width: 50px;
+}
+
+
+
+
+
+/* struttura interna centrale lato destro */
+.app-item-child-top-right{
+    justify-content: space-between;
+}
+
+
+/* .app-item-child-top-right .icon-item{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+
+.app-item-child-top-right .icon-item{
+    width: 50%;
+    align-items: center;
+}
+
+.app-item-child-top-right .icon-item.left{
+    justify-content: space-evenly;
+}
+
+.app-item-child-top-right > .icon-item img{
+    width: 50px;
+}
+
+.app-item-child-top-right .icon-item.right{
+    justify-content: flex-end;
+}
+.app-item-child-top-right .icon-item.right i{
+    padding: 8px;
+    margin-right: 10px;
 }
