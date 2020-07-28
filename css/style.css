@@ -156,3 +156,34 @@ body{
     padding: 8px;
     margin-right: 10px;
 }
+
+.app-item-child-center-right{
+    overflow-y: scroll;
+    background-image: url('https://lh4.ggpht.com/0U8gF0sWaWlm9zqNJ640YypoVQ_nMtPENY5t_TLAbmtatKFbbI6AwfxB51NWIOKRWA%3Dh900');
+}
+
+.app-item-child-bottom-right{
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.app-item-child-bottom-right div:first-child,
+.app-item-child-bottom-right div:last-child{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+.app-item-child-bottom-right div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.app-item-child-bottom-right div:nth-child(2) input{
+    width: 100%;
+    /* height: 90%; */
+    height: 50px;
+    border: none;
+    padding-left: 10px;
+}
