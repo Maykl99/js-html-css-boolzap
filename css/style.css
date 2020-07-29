@@ -226,7 +226,6 @@ body{
 }
 
 #mostra-orario{
-    background: aqua;
     width: 30%;
     height: 40%;
     position: absolute;
@@ -243,6 +242,15 @@ body{
     clear: both;
     padding: 10px;
     background-color: #ffffff;
+    position: relative;
+}
+
+#mostra-orario-random{
+    width: 30%;
+    height: 40%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .nascondi{
