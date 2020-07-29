@@ -246,6 +246,7 @@ body{
 }
 
 #mostra-orario-random{
+    background-color: #637383;
     width: 30%;
     height: 40%;
     position: absolute;
