@@ -222,6 +222,16 @@ body{
     clear: both;
     padding: 10px;
     background-color: #ccffcc;
+    position: relative;
+}
+
+#mostra-orario{
+    background: aqua;
+    width: 30%;
+    height: 40%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 #mostraRandom{

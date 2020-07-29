@@ -9,7 +9,9 @@ $(document).ready(function(){
                 console.log(valore);
                 var elemento = $('#mostra').clone().append(valore).addClass("mostra").removeClass('nascondi');
                 
+
                 $('.app-item-child-center-right').append(elemento);
+                $('#mostra-orario').appendChild(orario);
 
                 setTimeout(function(){
                     var listaRandom=[
@@ -23,7 +25,6 @@ $(document).ready(function(){
                     var indice=numeriRandom(0,(listaRandom.length-1));
                     var elementoRandom= $('#mostraRandom').clone().text(listaRandom[indice]).addClass("mostra").removeClass("nascondi");
                     $('.app-item-child-center-right').append(elementoRandom);
-
                 },2000)
 
                 }
@@ -36,3 +37,8 @@ $(document).ready(function(){
 function numeriRandom(min,max){
     return Math.floor(Math.random()*(max - min + 1) + min);
 }
+
+var tempo= new Date();
+var orario=tempo.getHours() + ":" + tempo.getMinutes();
+console.log(orario)
+
