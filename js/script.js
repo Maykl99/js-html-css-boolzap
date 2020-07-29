@@ -6,12 +6,13 @@ $(document).ready(function(){
         orario = "0" + orario;
         $('#mostra-orario').append(orario);
         $('#mostra-orario-random').append(orario);
+    }else{
+        // mostra orario
+        $('#mostra-orario').append(orario);
+        $('#mostra-orario-random').append(orario);  //-> Non funziona! da rivedere
     }
 
-    // mostra orario
-    $('#mostra-orario').append(orario);
-    $('#mostra-orario-random').append(orario);
-    
+
     // funzione aggiungi
     function aggiungi(event){
         if(event.which == 13 || event.keyCode == 13){
@@ -36,11 +37,17 @@ $(document).ready(function(){
                     var indice=numeriRandom(0,(listaRandom.length-1)); // scelta randomica degli elementi dalla array 
                     //lo assegno e lo vado a stampare 
                     var elementoRandom= $('#mostraRandom').clone().text(listaRandom[indice]).addClass("mostra").removeClass("nascondi");
+                    //$('#mostra-orario-random').append(orario);
                     $('.app-item-child-center-right').append(elementoRandom);
                     
                 },1000)
 
+                $('#messaggio').remove(valore); //-> Non funziona! da rivedere
+                //console.log(valore)
+               
             }
+            
+            
         }
     }
      
@@ -57,3 +64,11 @@ function numeriRandom(min,max){
 // tempo
 var tempo= new Date();
 var orario=tempo.getHours() + ":" + tempo.getMinutes();
+
+
+
+
+
+
+
+

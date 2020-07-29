@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/12bool.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Document</title>
 </head>
 <body>
@@ -48,7 +49,7 @@
                                 <div><img src="icon/icona_1.png" alt=""></div>
                                 <div>
                                     <div>Michele</div>
-                                    <div>Non poteva essere altrimenti</div>
+                                    <div class="stato">Non poteva essere altrimenti</div>
                                 </div>
                                 <div>17:58</div>
                             </div>
@@ -56,7 +57,7 @@
                                 <div><img src="icon/icona_2.png" alt=""></div>
                                 <div>
                                     <div>Martina</div>
-                                    <div>Non poteva essere altrimenti</div>
+                                    <div  class="stato">Non poteva essere altrimenti</div>
                                 </div>
                                 <div>17:58</div>
                             </div>
@@ -64,7 +65,7 @@
                                 <div><img src="icon/icona_4.png" alt=""></div>
                                 <div>
                                     <div>Davide</div>
-                                    <div>Non poteva essere altrimenti</div>
+                                    <div  class="stato">Non poteva essere altrimenti</div>
                                 </div>
                                 <div>17:58</div>
                             </div>
@@ -72,7 +73,7 @@
                                 <div><img src="icon/icona_4.png" alt=""></div>
                                 <div>
                                     <div>John</div>
-                                    <div>Non poteva essere altrimenti</div>
+                                    <div  class="stato">Non poteva essere altrimenti</div>
                                 </div>
                                 <div>17:58</div>
                             </div>
@@ -80,7 +81,7 @@
                                 <div><img src="icon/icona_5.png" alt=""></div>
                                 <div>
                                     <div>Mario</div>
-                                    <div>Non poteva essere altrimenti</div>
+                                    <div class="stato">Non poteva essere altrimenti</div>
                                 </div>
                                 <div>17:58</div>
                             </div>
@@ -88,7 +89,7 @@
                                 <div><img src="icon/icona_1.png" alt=""></div>
                                 <div>
                                     <div>Vittorio</div>
-                                    <div>Non poteva essere altrimenti</div>
+                                    <div class="stato">Non poteva essere altrimenti</div>
                                 </div>
                                 <div>17:58</div>
                             </div>
@@ -96,7 +97,7 @@
                                 <div><img src="icon/icona_2.png" alt=""></div>
                                 <div>
                                     <div>Michela</div>
-                                    <div>Non poteva essere altrimenti</div>
+                                    <div class="stato">Non poteva essere altrimenti</div>
                                 </div>
                                 <div>17:58</div>
                             </div>
@@ -104,7 +105,7 @@
                                 <div><img src="icon/icona_2.png" alt=""></div>
                                 <div>
                                     <div>Veronica</div>
-                                    <div>Non poteva essere altrimenti</div>
+                                    <div class="stato">Non poteva essere altrimenti</div>
                                 </div>
                                 <div>17:58</div>
                             </div>
@@ -112,7 +113,7 @@
                                 <div><img src="icon/icona_4.png" alt=""></div>
                                 <div>
                                     <div>Guglielmo</div>
-                                    <div>Non poteva essere altrimenti</div>
+                                    <div class="stato">Non poteva essere altrimenti</div>
                                 </div>
                                 <div>17:58</div>
                             </div>
@@ -120,7 +121,7 @@
                                 <div><img src="icon/icona_5.png" alt=""></div>
                                 <div>
                                     <div>Vincenzo</div>
-                                    <div>Non poteva essere altrimenti</div>
+                                    <div class="stato">Non poteva essere altrimenti</div>
                                 </div>
                                 <div>17:58</div>
                             </div>
@@ -128,7 +129,7 @@
                                 <div><img src="icon/icona_1.png" alt=""></div>
                                 <div>
                                     <div>Valerio</div>
-                                    <div>Non poteva essere altrimenti</div>
+                                    <div class="stato">Non poteva essere altrimenti</div>
                                 </div>
                                 <div>17:58</div>
                             </div>
@@ -136,7 +137,7 @@
                                 <div><img src="icon/icona_4.png" alt=""></div>
                                 <div>
                                     <div>Giorgio</div>
-                                    <div>Non poteva essere altrimenti</div>
+                                    <div class="stato">Non poteva essere altrimenti</div>
                                 </div>
                                 <div>17:58</div>
                             </div>
@@ -152,9 +153,9 @@
                             <div><img src="icon/icona_5.png" alt=""></div>
                             <div>
                                 <div>Mario</div>
-                                <div>Non poteva essere altrimenti</div>
+                                <div class="stato">Ultimo accesso oggi alle</div>
                             </div>
-                            <div>17:58</div>
+                            <div class="stato allineamento">17:58</div>
                         </div>
                         <div class="icon-item right flex">
                             <i class="fas fa-search"></i>
@@ -163,7 +164,7 @@
                         </div>
                     </section>
                     <section class="app-item-child-center-right">
-                        <div id="mostra" class="nascondi flex">
+                        <div id="mostra" class="nascondi">
                             <div id="mostra-orario"></div>
                         </div>
                         <div id="mostraRandom" class="nascondi">
@@ -173,7 +174,7 @@
                     <section class="app-item-child-bottom-right flex">
 
                         <div><i class="far fa-smile"></i></div>
-                        <div><input type="text" id="messaggio" placeholder="Scrivi un messsaggio"></div>
+                        <div><input type="text" id="messaggio" placeholder="Scrivi un messaggio"></div>
                         <div><i class="fas fa-microphone"></i></div>
 
                     </section>
