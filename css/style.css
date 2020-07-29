@@ -209,14 +209,30 @@ body{
 
 /* evento dinamico */
 .mostra{
+    display: inline-block;
+}
+
+#mostra{
     width: 25%;
     height: 50px;
-    display: flex;
     margin: 40px;
     background: #f3eeea;
     border-radius: 4px;
-    justify-content: flex-start;
+    float: right;
+    clear: both;
     padding: 10px;
+    background-color: #ccffcc;
+}
+
+#mostraRandom{
+    width: 25%;
+    height: 50px;
+    margin: 40px;
+    border-radius: 4px;
+    float: left;
+    clear: both;
+    padding: 10px;
+    background-color: #ffffff;
 }
 
 .nascondi{
