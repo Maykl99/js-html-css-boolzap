@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- Link di Fontawesome -->
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/12bool.css">
     <link rel="stylesheet" href="css/style.css">
@@ -12,32 +13,35 @@
 </head>
 <body>
     <div class="container">
-        <div class="top-child-container"></div>
-        <div class="child-container">
-            <div class="child-app-container col-10 col-offset-1">
+        <div class="top-child-container"></div> <!-- figlio container -->
+        <div class="child-container"><!-- secondo figlio container -->
+            <div class="child-app-container col-10 col-offset-1">  <!-- contenitore generale centrale -->
+                <!-- contenuto centrale lato sinistro all'interno 4 section livelli -->
                 <div class="child-app-container-item-left col-4">
                     <section class="app-item-child-top flex">
-                        <div><img src="icon/icona_1.png"></div>
+                        <div><img src="icon/icona_5.png"></div>
                         <div>
-                            <i class="fa fa-comments" aria-hidden="true"></i>
-                            <i class="fa fa-comments" aria-hidden="true"></i>
-                            <i class="fa fa-comments" aria-hidden="true"></i>
+                            <i class="fas fa-circle-notch"></i>
+                            <i class="fas fa-comment-alt"></i>
+                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
                         </div>
                     </section>
                     <section class="app-item-child-center flex">
                         <div>
                             <i class="far fa-bell-slash"></i>
                         </div>
-                        <div>
+                        <div class="testo-notifica">
                             <p>Ricevi notifiche di nuovi messaggi</p>
                             <p>Attiva notifiche dekstop</p>
                         </div>
                     </section>
+                    <section class="app-item-child-center-second flex">
+                        <div>
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Cerca o inizia una nuova chat">
+                        </div>
+                    </section>
                     <section class="app-item-child-bottom flex">
-<!--                        <div class="barra-ricerca">
-                        <i class="fas fa-search"></i>
-                           <input type="text" placeholder="Cerca o inizia una nuova chat">
-                       </div> -->
                        <div class="scroll">
                             <!-- qui gli avatar -->
                             <div class="scroll-icon flex">
@@ -48,11 +52,34 @@
                                 </div>
                                 <div>17:58</div>
                             </div>
-
                             <div class="scroll-icon flex">
-                                <div><img src="icon/icona_1.png" alt=""></div>
+                                <div><img src="icon/icona_2.png" alt=""></div>
                                 <div>
-                                    <div>Michele</div>
+                                    <div>Martina</div>
+                                    <div>Non poteva essere altrimenti</div>
+                                </div>
+                                <div>17:58</div>
+                            </div>
+                            <div class="scroll-icon flex">
+                                <div><img src="icon/icona_4.png" alt=""></div>
+                                <div>
+                                    <div>Davide</div>
+                                    <div>Non poteva essere altrimenti</div>
+                                </div>
+                                <div>17:58</div>
+                            </div>
+                            <div class="scroll-icon flex">
+                                <div><img src="icon/icona_4.png" alt=""></div>
+                                <div>
+                                    <div>John</div>
+                                    <div>Non poteva essere altrimenti</div>
+                                </div>
+                                <div>17:58</div>
+                            </div>
+                            <div class="scroll-icon flex">
+                                <div><img src="icon/icona_5.png" alt=""></div>
+                                <div>
+                                    <div>Mario</div>
                                     <div>Non poteva essere altrimenti</div>
                                 </div>
                                 <div>17:58</div>
@@ -60,7 +87,39 @@
                             <div class="scroll-icon flex">
                                 <div><img src="icon/icona_1.png" alt=""></div>
                                 <div>
-                                    <div>Michele</div>
+                                    <div>Vittorio</div>
+                                    <div>Non poteva essere altrimenti</div>
+                                </div>
+                                <div>17:58</div>
+                            </div>
+                            <div class="scroll-icon flex">
+                                <div><img src="icon/icona_2.png" alt=""></div>
+                                <div>
+                                    <div>Michela</div>
+                                    <div>Non poteva essere altrimenti</div>
+                                </div>
+                                <div>17:58</div>
+                            </div>
+                            <div class="scroll-icon flex">
+                                <div><img src="icon/icona_2.png" alt=""></div>
+                                <div>
+                                    <div>Veronica</div>
+                                    <div>Non poteva essere altrimenti</div>
+                                </div>
+                                <div>17:58</div>
+                            </div>
+                            <div class="scroll-icon flex">
+                                <div><img src="icon/icona_4.png" alt=""></div>
+                                <div>
+                                    <div>Guglielmo</div>
+                                    <div>Non poteva essere altrimenti</div>
+                                </div>
+                                <div>17:58</div>
+                            </div>
+                            <div class="scroll-icon flex">
+                                <div><img src="icon/icona_5.png" alt=""></div>
+                                <div>
+                                    <div>Vincenzo</div>
                                     <div>Non poteva essere altrimenti</div>
                                 </div>
                                 <div>17:58</div>
@@ -68,72 +127,15 @@
                             <div class="scroll-icon flex">
                                 <div><img src="icon/icona_1.png" alt=""></div>
                                 <div>
-                                    <div>Michele</div>
+                                    <div>Valerio</div>
                                     <div>Non poteva essere altrimenti</div>
                                 </div>
                                 <div>17:58</div>
                             </div>
                             <div class="scroll-icon flex">
-                                <div><img src="icon/icona_1.png" alt=""></div>
+                                <div><img src="icon/icona_4.png" alt=""></div>
                                 <div>
-                                    <div>Michele</div>
-                                    <div>Non poteva essere altrimenti</div>
-                                </div>
-                                <div>17:58</div>
-                            </div>
-                            <div class="scroll-icon flex">
-                                <div><img src="icon/icona_1.png" alt=""></div>
-                                <div>
-                                    <div>Michele</div>
-                                    <div>Non poteva essere altrimenti</div>
-                                </div>
-                                <div>17:58</div>
-                            </div>
-                            <div class="scroll-icon flex">
-                                <div><img src="icon/icona_1.png" alt=""></div>
-                                <div>
-                                    <div>Michele</div>
-                                    <div>Non poteva essere altrimenti</div>
-                                </div>
-                                <div>17:58</div>
-                            </div>
-
-                            <div class="scroll-icon flex">
-                                <div><img src="icon/icona_1.png" alt=""></div>
-                                <div>
-                                    <div>Michele</div>
-                                    <div>Non poteva essere altrimenti</div>
-                                </div>
-                                <div>17:58</div>
-                            </div>
-                            <div class="scroll-icon flex">
-                                <div><img src="icon/icona_1.png" alt=""></div>
-                                <div>
-                                    <div>Michele</div>
-                                    <div>Non poteva essere altrimenti</div>
-                                </div>
-                                <div>17:58</div>
-                            </div>
-                            <div class="scroll-icon flex">
-                                <div><img src="icon/icona_1.png" alt=""></div>
-                                <div>
-                                    <div>Michele</div>
-                                    <div>Non poteva essere altrimenti</div>
-                                </div>
-                                <div>17:58</div>
-                            </div>
-                            <div class="scroll-icon flex">
-                                <div><img src="icon/icona_1.png" alt=""></div>
-                                <div>
-                                    <div>Michele</div>
-                                    <div>Non poteva essere altrimenti</div>
-                                </div>
-                                <div>17:58</div>
-                            </div>
-                            <div class="scroll-icon flex">
-                                <div><img src="icon/icona_1.png" alt=""></div>
-                                <div>
-                                    <div>Michele</div>
+                                    <div>Giorgio</div>
                                     <div>Non poteva essere altrimenti</div>
                                 </div>
                                 <div>17:58</div>
@@ -143,12 +145,13 @@
                        </div>
                     </section>
                 </div>
+                <!-- contenuto centrale lato destro all'interno 3 section livelli -->
                 <div class="child-app-container-item-right col-8">
                     <section class="app-item-child-top-right flex">
                         <div class="icon-item left flex">
-                            <div><img src="icon/icona_1.png" alt=""></div>
+                            <div><img src="icon/icona_5.png" alt=""></div>
                             <div>
-                                <div>Michele</div>
+                                <div>Mario</div>
                                 <div>Non poteva essere altrimenti</div>
                             </div>
                             <div>17:58</div>
@@ -159,18 +162,20 @@
                             <i class="fas fa-ellipsis-v"></i>
                         </div>
                     </section>
-                    <section class="app-item-child-center-right"></section>
+                    <section class="app-item-child-center-right">
+                        <div id="mostra" class="nascondi"></div>
+                    </section>
                     <section class="app-item-child-bottom-right flex">
 
                         <div><i class="far fa-smile"></i></div>
-                        <div><input type="text" placeholder="Scrivi un messsaggio"></div>
+                        <div><input type="text" id="messaggio" placeholder="Scrivi un messsaggio"></div>
                         <div><i class="fas fa-microphone"></i></div>
 
                     </section>
                 </div>
             </div>
         </div>
-
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
