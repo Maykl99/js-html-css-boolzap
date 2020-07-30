@@ -70,7 +70,12 @@ $('.contact-element').click(function(){
     $(this).addClass('active-utente'); 
     var click=$(this).index(); // scopro l'indice dell'utente selezionato
     var elemento=$('.app-item-child-center-right').eq(click).addClass('active'); 
-})
+});
+
+
+// $('.scroll-icon').click(function(){
+//     // $('#utente-passante').html().append('ciao');
+// })
 
 /* index() è un metodo integrato in jQuery che viene utilizzato per restituire 
 l'indice degli elementi specificati rispetto al selettore. 
