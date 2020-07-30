@@ -186,7 +186,7 @@ body{
 
 .app-item-child-center-right{
     overflow-y: scroll;
-    background-image: url('https://i.redd.it/qwd83nc4xxf41.jpg');
+    /* background-image: url('https://i.redd.it/qwd83nc4xxf41.jpg'); */
 }
 
 .app-item-child-bottom-right{
@@ -221,11 +221,11 @@ body{
 
 
 /* evento dinamico */
-.mostra{
+/* .mostra{
     display: inline-block;
 }
 
-#mostra{
+.mostra{
     width: 25%;
     height: 50px;
     margin: 40px;
@@ -269,4 +269,87 @@ body{
 
 .nascondi{
     display: none;
+} 
+ */
+
+ .nascondi{
+    display: none;
+} 
+.message{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.inviato,.ricevuto{
+    width: 25%;
+    height: 60px;
+    margin: 20px;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.inviato {
+    background-color: #ccffcc;
+    float: right;
+    clear: both;
+}
+
+.ricevuto {
+    background-color: #fff;
+    float: left;
+    clear: both;
+}
+
+.orario{
+    position: absolute;
+    background: transparent;
+    /* width: 25%; */
+    height: 30%;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.app-item-child-center-right{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.active-utente{
+    color: teal;
+}
+
+.contact-element{
+    transition: 0.2s;
+}
+
+.contact-element:hover{
+    background-color: rgb(211, 208, 208);
+}
+
+
+
+
+
+
+.color1{
+    background-color: red;
+}
+
+.color2{
+    background-color: tomato;
+}
+
+.color3{
+    background-color: teal;
+}
+
+.color4{
+    background-color: rosybrown;
 }

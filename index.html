@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Link di Fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"><!-- Link di Fontawesome -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/12bool.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <title>Document</title>
+    <title>Boolzap</title>
 </head>
 <body>
     <div class="container">
@@ -45,7 +44,7 @@
                     <section class="app-item-child-bottom flex">
                        <div class="scroll">
                             <!-- qui gli avatar -->
-                            <div class="scroll-icon flex">
+                            <div class="scroll-icon flex contact-element active-utente">
                                 <div><img src="icon/icona_1.png" alt=""></div>
                                 <div>
                                     <div>Michele</div>
@@ -53,7 +52,7 @@
                                 </div>
                                 <div>17:58</div>
                             </div>
-                            <div class="scroll-icon flex">
+                            <div class="scroll-icon flex contact-element">
                                 <div><img src="icon/icona_2.png" alt=""></div>
                                 <div>
                                     <div>Martina</div>
@@ -61,7 +60,7 @@
                                 </div>
                                 <div>17:58</div>
                             </div>
-                            <div class="scroll-icon flex">
+                            <div class="scroll-icon flex contact-element">
                                 <div><img src="icon/icona_4.png" alt=""></div>
                                 <div>
                                     <div>Davide</div>
@@ -69,7 +68,7 @@
                                 </div>
                                 <div>17:58</div>
                             </div>
-                            <div class="scroll-icon flex">
+                            <div class="scroll-icon flex contact-element">
                                 <div><img src="icon/icona_4.png" alt=""></div>
                                 <div>
                                     <div>John</div>
@@ -77,7 +76,7 @@
                                 </div>
                                 <div>17:58</div>
                             </div>
-                            <div class="scroll-icon flex">
+                           <!--  <div class="scroll-icon flex">
                                 <div><img src="icon/icona_5.png" alt=""></div>
                                 <div>
                                     <div>Mario</div>
@@ -140,7 +139,7 @@
                                     <div class="stato">Non poteva essere altrimenti</div>
                                 </div>
                                 <div>17:58</div>
-                            </div>
+                            </div> -->
 
 
                        </div>
@@ -163,14 +162,13 @@
                             <i class="fas fa-ellipsis-v"></i>
                         </div>
                     </section>
-                    <section class="app-item-child-center-right">
-                        <div id="mostra" class="nascondi">
-                            <div id="mostra-orario"></div>
-                        </div>
-                        <div id="mostraRandom" class="nascondi">
-                            <div id="mostra-orario-random"></div>
-                        </div>
-                    </section>
+
+                    <section class="app-item-child-center-right active"></section>
+                    <section class="app-item-child-center-right color1"></section>
+                    <section class="app-item-child-center-right color2"></section>
+                    <section class="app-item-child-center-right color3"></section>
+                    <section class="app-item-child-center-right color4"></section>
+
                     <section class="app-item-child-bottom-right flex">
 
                         <div><i class="far fa-smile"></i></div>
@@ -182,6 +180,19 @@
             </div>
         </div>
     </div>
-    <script src="js/script.js"></script>
+
+   <!-- Template da clonare -->
+   <div class="template nascondi">
+
+        <div class="message">
+            <!-- da levare -> <div class="mostra-orario"></div> --> 
+            <p class="paragrafo"></p>
+            <p class="orario"></p>
+        </div>
+
+    </div>
+
+    <script src="js/script2.js"></script>
 </body>
 </html>
+
