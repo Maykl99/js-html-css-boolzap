@@ -186,7 +186,7 @@ body{
 
 .app-item-child-center-right{
     overflow-y: scroll;
-    /* background-image: url('https://i.redd.it/qwd83nc4xxf41.jpg'); */
+    background-image: url('https://i.redd.it/qwd83nc4xxf41.jpg');
 }
 
 .app-item-child-bottom-right{
@@ -338,7 +338,7 @@ body{
 
 
 
-.color1{
+/* .color1{
     background-color: red;
 }
 
@@ -352,4 +352,4 @@ body{
 
 .color4{
     background-color: rosybrown;
-}
+} */
