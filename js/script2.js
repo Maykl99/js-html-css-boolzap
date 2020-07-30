@@ -67,7 +67,7 @@ $('.contact-element').click(function(){
     elementoAttivo.removeClass("active-utente");
     var schermataAttiva=$('.app-item-child-center-right.active'); // seleziono la schermata attive
     schermataAttiva.removeClass('active'); // rimuovo la classe a schermata attiva
-    $(this).addClass('active-utente'); // NON funziona provo ad aggiungere la classe alla prossima schermata attiva
+    $(this).addClass('active-utente'); 
     var click=$(this).index(); // scopro l'indice dell'utente selezionato
     var elemento=$('.app-item-child-center-right').eq(click).addClass('active'); 
 })
