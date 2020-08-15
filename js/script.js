@@ -86,6 +86,53 @@
 
 
 
+// index e eq
+/* aggiungere una classe active, quando inviate un messaggio appenderlo alla classe active
+il messaggio che inviate lo deve appendere alla chat active
+anche nelle li mettere active
 
 
 
+
+
+// $('.scroll-icon').click(function(){
+//     // $('#utente-passante').html().append('ciao');
+// })
+
+/* index() è un metodo integrato in jQuery che viene utilizzato per restituire 
+l'indice degli elementi specificati rispetto al selettore. 
+
+$ (Selector) .index (elemento)
+
+eq() Il metodo eq () è un metodo integrato in jQuery che viene utilizzato
+per individuare direttamente 
+gli elementi selezionati e restituisce un elemento con indice specifico.
+
+$ (Selector) .eq (indice)
+*/
+
+
+// NUOVO
+
+// // prelevo il nome e lo stampo
+// $('.name-flex').click(function(){
+//    var elemento = $(this).text();
+//    $('.nome-passante').text(elemento);
+// })
+
+// prelevo il nome e lo stampo
+// $('.contact-element').click(function(){
+//     var elemento= $('.name-flex').find('h4').text()
+//     elemento = $(this).text();
+//     $('.nome-passante').text(elemento);
+// })
+
+// var img = $('.contact.active').find('img').attr('src');
+// var tit = $('.contact.active').find('h3').text();
+// // prelevo l'img e lo passo
+
+// $('.img-flex').click(function(){
+//     var isThis=$(this);
+//     var attrElemento=isThis.attr('src','');
+//     $('.img-passante').html(attrElemento);
+// });

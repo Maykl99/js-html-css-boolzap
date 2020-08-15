@@ -1,11 +1,24 @@
 $(document).ready(function(){
 
+// ricerca
+$("#ricerca-nome").keyup(function(){
+    var valoreInput= $("#ricerca-nome").val().toLowerCase();
+    var contacts = $('.contact-element');
+
+    contacts.each(function(){
+        if($(this).find('h4').text().toLowerCase().includes(valoreInput)){
+            $(this).show();
+        }else{
+            $(this).hide();
+        }
+    })
+});
 
 $("#messaggio").keydown(function(event){
     if(event.which == 13 || event.keyCode == 13){
         if($('#messaggio').val() !== ""){
             invioMessaggio();
-            $('#messaggio').val('')
+            $('#messaggio').val('');
         }
     }
 })
@@ -16,11 +29,11 @@ function invioMessaggio(){
     var clone = $(".template .message").clone();
     clone.addClass("inviato");
     clone.find(".paragrafo").append(valore);
-    clone.find(".orario").append(orario);
+    clone.find(".orario").append(data()) //append(orario);
     $(".app-item-child-center-right.active").append(clone);
 
     //$('#messaggio').val('');
-    setTimeout(rispostaAutomatica,2000);
+    setTimeout(rispostaAutomatica,500);
 }
 
 function rispostaAutomatica(){
@@ -29,62 +42,63 @@ function rispostaAutomatica(){
         'come stai?',
         'tutto okay',
         'meglio così',
-       'allora ci vediamo in giro'
+        'allora ci vediamo in giro',
+        'stai studiando?',
+        'fai come vuoi'
     ];
     var indice=numeriRandom(0,(listaRandom.length-1));
 
     var clone2 = $(".template .message").clone();
     clone2.addClass("ricevuto");
     clone2.find(".paragrafo").append(listaRandom[indice])
-    clone2.find(".orario").append(orario);
+    clone2.find(".orario").append(data()); //append(orario);
     $(".app-item-child-center-right.active").append(clone2);
 }
 
-})
 
 
-// funzione random
+
+$('.contact-element').click(function(){
+
+    //$('.name-flex').find('div:first-child').text();
+    var elementoAttivo=$('.contact-element.active-utente'); // seleziono l'utente
+    elementoAttivo.removeClass("active-utente");
+    var schermataAttiva=$('.app-item-child-center-right.active'); // seleziono la schermata attive
+    schermataAttiva.removeClass('active'); // rimuovo la classe a schermata attiva
+
+    $(this).addClass('active-utente'); 
+    var click=$(this).index(); // scopro l'indice dell'utente selezionato
+    // $('.app-item-child-center-right').removeClass('active');
+    var elemento=$('.app-item-child-center-right').eq(click).addClass('active');
+    var img = $('.contact-element.active-utente').find('img').attr('src');
+    var text = $('.contact-element.active-utente').find('h4').text();
+    $('.nome-passante').text(text);
+    $('.img-passante > img').attr('src',img);
+});
+
+}); // chiusura .ready
+
+
+
+
+// random
 function numeriRandom(min,max){
     return Math.floor(Math.random()*(max - min + 1) + min);
 }
 
 // tempo
-var tempo= new Date();
-var orario=tempo.getHours() + ":" + tempo.getMinutes();
+function data(){
+    var tempo= new Date();
+    var ora= addZero(tempo.getHours());
+    var minuti= addZero(tempo.getMinutes());
+    var tempoEffettivo= ora + ':' + minuti
+    return tempoEffettivo;
+}
 
-
-// index e eq
-
-
-/* aggiungere una classe active, quando inviate un messaggio appenderlo alla classe active
-
-il messaggio che inviate lo deve appendere alla chat active
-anche nelle li mettere active
-*/
-
-$('.contact-element').click(function(){
-    var elementoAttivo=$('.contact-element.active-utente'); // seleziono l'utente
-    elementoAttivo.removeClass("active-utente");
-    var schermataAttiva=$('.app-item-child-center-right.active'); // seleziono la schermata attive
-    schermataAttiva.removeClass('active'); // rimuovo la classe a schermata attiva
-    $(this).addClass('active-utente'); 
-    var click=$(this).index(); // scopro l'indice dell'utente selezionato
-    var elemento=$('.app-item-child-center-right').eq(click).addClass('active'); 
-});
-
-
-// $('.scroll-icon').click(function(){
-//     // $('#utente-passante').html().append('ciao');
-// })
-
-/* index() è un metodo integrato in jQuery che viene utilizzato per restituire 
-l'indice degli elementi specificati rispetto al selettore. 
-
-$ (Selector) .index (elemento)
-
-eq() Il metodo eq () è un metodo integrato in jQuery che viene utilizzato
-per individuare direttamente 
-gli elementi selezionati e restituisce un elemento con indice specifico.
-
-$ (Selector) .eq (indice)
-*/
+// tempo aggiunta zero
+function addZero(numero){
+    if(numero < 10){
+        return '0' + numero;
+    }
+    return numero;
+};
