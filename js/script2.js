@@ -31,8 +31,6 @@ function invioMessaggio(){
     clone.find(".paragrafo").append(valore);
     clone.find(".orario").append(data()) //append(orario);
     $(".app-item-child-center-right.active").append(clone);
-
-    //$('#messaggio').val('');
     setTimeout(rispostaAutomatica,500);
 }
 
@@ -60,7 +58,6 @@ function rispostaAutomatica(){
 
 $('.contact-element').click(function(){
 
-    //$('.name-flex').find('div:first-child').text();
     var elementoAttivo=$('.contact-element.active-utente'); // seleziono l'utente
     elementoAttivo.removeClass("active-utente");
     var schermataAttiva=$('.app-item-child-center-right.active'); // seleziono la schermata attive
@@ -68,7 +65,6 @@ $('.contact-element').click(function(){
 
     $(this).addClass('active-utente'); 
     var click=$(this).index(); // scopro l'indice dell'utente selezionato
-    // $('.app-item-child-center-right').removeClass('active');
     var elemento=$('.app-item-child-center-right').eq(click).addClass('active');
     var img = $('.contact-element.active-utente').find('img').attr('src');
     var text = $('.contact-element.active-utente').find('h4').text();

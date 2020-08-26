@@ -136,3 +136,21 @@ $ (Selector) .eq (indice)
 //     var attrElemento=isThis.attr('src','');
 //     $('.img-passante').html(attrElemento);
 // });
+
+// $('.contact-element').click(function(){
+
+//     //$('.name-flex').find('div:first-child').text();
+//     var elementoAttivo=$('.contact-element.active-utente'); // seleziono l'utente
+//     elementoAttivo.removeClass("active-utente");
+//     var schermataAttiva=$('.app-item-child-center-right.active'); // seleziono la schermata attive
+//     schermataAttiva.removeClass('active'); // rimuovo la classe a schermata attiva
+
+//     $(this).addClass('active-utente'); 
+//     var click=$(this).index(); // scopro l'indice dell'utente selezionato
+//     // $('.app-item-child-center-right').removeClass('active');
+//     var elemento=$('.app-item-child-center-right').eq(click).addClass('active');
+//     var img = $('.contact-element.active-utente').find('img').attr('src');
+//     var text = $('.contact-element.active-utente').find('h4').text();
+//     $('.nome-passante').text(text);
+//     $('.img-passante > img').attr('src',img);
+// });
